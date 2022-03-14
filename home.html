@@ -2,89 +2,139 @@
 <html lang="en">
 
 <head>
-    <title>Cinema Homepage</title>
+    <title>DF Cinemas Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-        .row.content {
-            height: 1500px
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        * {
+            background-color: rgb(48, 25, 52);
+            color: yellow;
         }
 
-        /* Set gray background color and 100% height */
-        .sidenav {
-            background-color: #f1f1f1;
-            height: 100%;
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
         }
 
-        /* Set black background color, white text and some padding */
+        /* Add a gray background color and some padding to the footer */
         footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
+            /* background-color: #f2f2f2; */
+            padding: 25px;
         }
 
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
+        .carousel-inner img {
+            overflow: hidden;
+            width: 100%;
+            /* Set width to 100% */
+            margin: auto;
+            min-height: 200px;
+        }
 
-            .row.content {
-                height: auto;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
             }
+        }
+
+        .logoImg {
+            height: 50px;
+            float: "left";
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-sm-3 sidenav">
-                <!-- <h4>DF Cinema</h4> -->
-                <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="./home.html">Home</a></li>
-                    <li><a href="./whatsOn.html">What's On</a></li>
-                    <li><a href="./signUp.html">Sign Up</a></li>
-                </ul><br>
-                <!-- <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search Blog..">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div> -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                <img src="./images/DFLogo.jpg" alt="" class="img-fluid logoImg">
             </div>
-            <header>
-                <div class="col-sm-9">
-                    <h1>DF Cinema</h1>
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./home.html">Home</a></li>
+                <li><a href="./whatsOn.html">What's On</a></li>
+                <li><a href="./signUp.html">Sign Up</a></li>
+            </ul>
+
+    </nav>
+
+    <main>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" max-height="100%">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./images/cinema_seating.jpg" alt="Image" class="img-fluid">
                 </div>
-            </header>
-
-            <main>
-                <div class="col-sm-9">
-
-                    <img src="./images/cinema_chairs.jpeg" alt="Cinema chair image">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam debitis veniam sapiente
-                        rerum est, obcaecati tempore ducimus commodi possimus voluptates atque,
-                        quod quis soluta placeat nihil aut facere cupiditate sunt!</p>
-
-                </div>
-            </main>
-
-
-
+            </div>
         </div>
-    </div>
 
-    <footer class="container-fluid">
-        <p>Digital Futures &copy;</p>
+
+        <section name="container text-center section4" class="row">
+            <div class="col-12">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus sint
+                    aliquid, ex praesentium animi dolores quisquam nisi placeat consequatur. Eos a in quo
+                    magni ab amet earum, eaque quas rem nobis sunt illo tenetur debitis. Suscipit eum
+                    aliquam quibusdam</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores placeat dolores
+                    cum iure aspernatur, odit laboriosam minus impedit expedita.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores placeat dolores
+                    cum iure aspernatur, odit laboriosam minus impedit expedita.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium corporis,
+                    officiis consequatur itaque adipisci iure error placeat earum, eum est nihil similique
+                    laborum aliquid dolorum libero obcaecati voluptatibus non?</p>
+            </div>
+
+
+            <h1>Information</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque quis minus
+                accusantium, cum at
+                nihil quasi fuga reprehenderit ex iusto quia veniam libero consequatur nostrum odit
+                placeat,
+                quisquam qui!
+            </p>
+            </div>
+        </section>
+        <div class=" row">
+            <div class="col-sm-4">
+                <img src="./images/cinema_screen.jpeg" class="img-responsive" style="width:100%" alt="Image">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="./images/cinema_chairs.jpeg" class="img-responsive" style="width:100%" alt="Image">
+
+            </div>
+            <div class="col-sm-4">
+                <img src="./images/cinema_seating.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+
+
+            <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        </div><br> --> -->
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores placeat dolores
+                cum iure aspernatur, odit laboriosam minus impedit expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores placeat dolores
+                cum iure aspernatur, odit laboriosam minus impedit expedita.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium corporis,
+                officiis consequatur itaque adipisci iure error placeat earum, eum est nihil similique
+                laborum aliquid dolorum libero obcaecati voluptatibus non?</p>
+        </div>
+    </main>
+
+    <footer class="container-fluid text-center">
+        <p>&copy; Digital Futures -2021-</p>
     </footer>
 
 </body>
