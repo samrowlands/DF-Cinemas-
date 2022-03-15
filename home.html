@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <title>DF Cinemas Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +11,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         /* Remove the navbar's default margin-bottom and rounded borders */
+
         * {
-            background-color: rgb(48, 25, 52);
-            color: yellow;
+            background-color: rgb(7, 2, 49);
+            color: hotpink;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
 
         .navbar {
@@ -45,6 +53,48 @@
             height: 50px;
             float: "left";
         }
+
+        section {
+            width: 100%;
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 50%;
+        }
+
+        #cinema-seats-banner {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            color: hotpink;
+            margin-left: 3%;
+            font-family: ;
+        }
+
+        p {
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .trio-image-div {
+            width: 96%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
     </style>
 </head>
 
@@ -69,19 +119,14 @@
 
     </nav>
 
-    <main>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" max-height="100%">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="./images/cinema_seating.jpg" alt="Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
+    <main class="container">
 
+        <section class="row" id="cinema-seats-banner">
+            <img src="./images/cinema_screen.jpeg" alt="screen chairs" height="300px" width="94%">
+        </section>
 
-        <section name="container text-center section4" class="row">
-            <div class="col-12">
+        <section class="row">
+            <div>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus sint
                     aliquid, ex praesentium animi dolores quisquam nisi placeat consequatur. Eos a in quo
                     magni ab amet earum, eaque quas rem nobis sunt illo tenetur debitis. Suscipit eum
@@ -106,9 +151,10 @@
             </p>
             </div>
         </section>
-        <div class=" row">
+
+        <div class="row trio-image-div">
             <div class="col-sm-4">
-                <img src="./images/cinema_screen.jpeg" class="img-responsive" style="width:100%" alt="Image">
+                <img src="./images/popcorn.jpeg" class="img-responsive" style="width:100%" alt="Image">
 
             </div>
             <div class="col-sm-4">
@@ -118,10 +164,6 @@
             <div class="col-sm-4">
                 <img src="./images/cinema_seating.jpg" class="img-responsive" style="width:100%" alt="Image">
             </div>
-
-
-            <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        </div><br> --> -->
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores placeat dolores
                 cum iure aspernatur, odit laboriosam minus impedit expedita.</p>
